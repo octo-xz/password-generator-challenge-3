@@ -19,11 +19,13 @@ function writePassword() {
 
   passwordText.value = password;
 
-}
+
 //questions for password parameters
 function generatePassword() {
   //password length
   var passLength = prompt("What password length do you want?") 
+  passLengthInt = parseInt(passLength)
+  
   //special characters y/n
   var specialConfirm = confirm("Do you want to use special characters?")
   //lowercase characters y/n
@@ -32,6 +34,9 @@ function generatePassword() {
   var upperCase = confirm("Do you want to use uppercase characters?")
   //include numbers y/n
   var numbersConfirm = confirm("Do you want to use numbers?")
+}
+
+
 
   var allChar = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQESTUVWXYZ123456789!@#$%^&*()-_=+/?\|][}{;:'><.,`~"
   var lower = "abcdefghijklmnopqrstuvwxyz"
@@ -39,8 +44,9 @@ function generatePassword() {
   var nums = "123456789"
   var specials = "!@#$%^&*()-_=+/?\|][}{;:'><.,`~"
 
-  if (passLength) {
-
+  if (passLength < 8) {
+    alert("password must be greater than 8 characters")
+    return null;
   }
 
   if (specialConfirm) {
@@ -65,7 +71,7 @@ function generatePassword() {
   }
 
   if (numbersConfirm) {
-    numbersIndex = Math.floor(Math.random( * nums=.length))
+    numbersIndex = Math.floor(Math.random() * nums.length)
     numsC = nums[numbersIndex]
   } else {
     nums * 0
