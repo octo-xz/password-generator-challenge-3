@@ -24,7 +24,11 @@ function generatePassword() {
   //password length
   var passLength = prompt("What password length do you want?") 
   passLengthInt = parseInt(passLength)
-  
+  //setting password length requirements
+  if (passLengthInt < 8) {
+    alert("password must be greater than 8 characters")
+    return null;
+  } 
   //special characters y/n
   var specialConfirm = confirm("Do you want to use special characters?")
   //lowercase characters y/n
@@ -35,31 +39,17 @@ function generatePassword() {
   var numbersConfirm = confirm("Do you want to use numbers?")
 }
 
-
-
-  var allChar = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQESTUVWXYZ123456789!@#$%^&*()-_=+/?\|][}{;:'><.,`~"
-  var lower = "abcdefghijklmnopqrstuvwxyz"
-  var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var nums = "123456789"
-  var specials = "!@#$%^&*()-_=+/?\|][}{;:'><.,`~"
-
-  if (passLength < 8) {
-    alert("password must be greater than 8 characters")
-    return null;
-  }
-
-  if (specialConfirm) {
-    specialsIndex = Math.floor(Math.random() * specials.length)
-    special = specials[specialsIndex]
-  } else {
-    specials * 0
-  }
+  const lower = "abcdefghijklmnopqrstuvwxyz".split('')
+  const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+  const nums = "123456789".split('')
+  const specials = "!@#$%^&*()-_=+/?\|][}{;:'><.,`~".split('')
+  
 
   if (lowerCase) {
     lowerIndex = Math.floor(Math.random() * lower.length)
     lowerC = lower[lowerIndex]
   } else {
-    lower * 0
+    return !lowerCase;
   }
 
   if (upperCase) {
