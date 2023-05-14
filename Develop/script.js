@@ -19,7 +19,6 @@ function writePassword() {
 
   passwordText.value = password;
 
-
 //questions for password parameters
 function generatePassword() {
   //password length
@@ -80,7 +79,6 @@ function generatePassword() {
   console.log(passLength, upperCase, lowerCase, specialConfirm, numbersConfirm)
   return passLength;
 }
-
 
 
 // Add event listener to generate button
