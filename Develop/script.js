@@ -1,4 +1,5 @@
 // Assignment code here
+
 //user clicks generate password button
 //select parameters for password
 //using prompt for password length
@@ -20,6 +21,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
 //questions for password parameters
 function generatePassword() {
   //password length
@@ -79,3 +81,8 @@ function generatePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
