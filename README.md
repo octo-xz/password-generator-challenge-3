@@ -32,3 +32,4 @@ You can find the deployed webpage at this link: https://octo-xz.github.io/passwo
 ## Tests
 
 5/14/2023 Parameters currently not working
+5/22/2023 CSS and JS files not loading on HTML page
