@@ -35,8 +35,13 @@ function generatePassword() {
 //   return null;
 //}
 //creates logic to keep password from being too long
-if (passLengthInt > 128 || passLengthInt < 8) {
-  alert("password length is either too short or too long")
+if (passLengthInt > 128) {
+  alert("password length is too long")
+  return null;
+}
+
+if (passLength < 8) {
+  alert("password length is too short")
   return null;
 }
 

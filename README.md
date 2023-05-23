@@ -7,6 +7,8 @@ This project if the first to delve into the fintionality of JavaScript. It featu
 
 This password generator can be used by anyone who wants a secure password for whatever account they have.
 
+![a picture of the password generator site. There is a created password inside the text field and there is a large red button to generate a password underneath.](./images/passwordGeneratorSC.png)
+
 ## Credits
 
 I would like to thank all the Learning Assistants through AskBCS who helped me through blocks(even when they were super basic) and I would also like to thank my tutor Dru for being so fun and making coding a great learning experience. I would also like to thank my instructor Robbert for his great lectures as well as all the TAs who are invaluable to the learning experience!
